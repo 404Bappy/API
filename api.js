@@ -19,3 +19,7 @@ const shop = {
 const shopStringified = JSON.stringify(shop);
 console.log(shop);
 console.log(shopStringified);
+
+
+const converted = JSON.parse(shopStringified);
+console.log(converted); 
