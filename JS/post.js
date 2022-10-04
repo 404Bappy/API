@@ -11,10 +11,11 @@ function displayPosts(posts){
    for (const post of posts){
        const div = document.createElement('div');
        div.innerHTML = `
-       <h3>New title</h3>
+       <h3>${post.title}</h3>
        <p>New description </P>
        
-       `
+       `;
        postContainer.appendchild(div);
+       console.log(post.title);
    }
 }
