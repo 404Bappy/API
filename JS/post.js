@@ -7,5 +7,14 @@ function loadPost(){
 loadPost();
 
 function displayPosts(posts){
-    console.log(posts);
+   const postContainer = document.getElementById('posts');
+   for (const post of posts){
+       const div = document.createElement('div');
+       div.innerHTML = `
+       <h3>New title</h3>
+       <p>New description </P>
+       
+       `
+       postContainer.appendchild(div);
+   }
 }
