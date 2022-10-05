@@ -23,6 +23,13 @@ function displayPosts(posts){
 
 function addPost(){
     fetch('https://jsonplaceholder.typicode.com/posts',{
-        method:
+        method: 'POST',
+        body: JSON.stringify({
+            title: 'my new post',
+            userId: 1
+        }),
+        headers:{
+            'Content-type': 'application/json; charset=UTF-8'
+        }
     })
 }
