@@ -20,3 +20,9 @@ function displayPosts(posts){
        console.log(post);
    }
 }
+
+function addPost(){
+    fetch('https://jsonplaceholder.typicode.com/posts',{
+        method:
+    })
+}
