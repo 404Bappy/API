@@ -23,12 +23,12 @@ function loadPost() {
 //}
 
 function displayUsers(data) {
-    //const ul = document.getElementById('users')
+    const ul = document.getElementById('users');
     for (const user of data) {
-        console.log(user.name);
-        //const li = document.getElementById('li');
-        //li.innerText='New User';
-        //ul.appendChild(li);
+       // console.log(user.name);
+        const li = document.createElement('li');
+        li.innerText='New User';
+        ul.appendChild(li);
 
     }
 }
