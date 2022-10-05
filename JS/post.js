@@ -1,10 +1,10 @@
-function loadPost(){
+function loadPosts(){
 
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(Response => Response.json())
     .then(data => displayPosts(data))
 }
-loadPost();
+loadPosts();
 
 function displayPosts(posts){
    const postContainer = document.getElementById('posts');
@@ -15,7 +15,7 @@ function displayPosts(posts){
        <p>New description </P>
        
        `;
-       postContainer.appendchild(div);
+       postContainer.appendChild(div);
        console.log(post.title);
    }
 }
