@@ -15,3 +15,5 @@ function displayAlbums(albums){
         albumCintainer.appendChild(p);
     }
 }
+
+// H.W => Comments & Photos of jsonplaceholder.com//
