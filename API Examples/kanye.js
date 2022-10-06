@@ -3,3 +3,7 @@ const loadQuotes = () => {
     .then(res => res.json())
     .then(data => console.log(data));
 }
+
+const displayQuote = quote => {
+    console.log(quote);
+}
