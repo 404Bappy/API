@@ -3,6 +3,7 @@ function loadAlbums(){
     .then(res => res.json())
     .then(data => displayAlbums(data));
 }
+loadAlbums();
 
 function displayAlbums(albums){
     const albumCintainer = document.getElementById('albums');
