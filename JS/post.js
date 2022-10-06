@@ -35,3 +35,6 @@ function addPost(){
     .then(res => res.json())
     .then(data => console.log(data))
 }
+
+
+/// We have to know HTTP Get VS Post (Difference) //
