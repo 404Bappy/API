@@ -32,4 +32,6 @@ function addPost(){
             'Content-type': 'application/json; charset=UTF-8'
         }
     })
+    .then(res => res.json())
+    .then(data => console.log(data))
 }
