@@ -8,5 +8,8 @@ loadBuddies();
 
 const displayBuddies = data => {
     const buddies = data.results;
-    console.log(data.results);
+    const buddiesDiv = document.getElementById('buddies');
+    for(const buddy of buddies){
+        console.log(buddy.email);
+    }
 }
