@@ -11,5 +11,8 @@ const displayBuddies = data => {
     const buddiesDiv = document.getElementById('buddies');
     for(const buddy of buddies){
         console.log(buddy.email);
+        const p = document.createElement('p');
+        p.innerText = buddy.email;
+        buddiesDiv.appendChild(p);
     }
 }
