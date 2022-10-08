@@ -12,7 +12,7 @@ const displayBuddies = data => {
     for(const buddy of buddies){
         console.log(buddy.name.first,buddy.name.last);
         const p = document.createElement('p');
-        p.innerText = buddy.email;
+        p.innerText =`Name: ${buddy.name.first} ${buddy.name.last}` buddy.email;
         buddiesDiv.appendChild(p);
     }
 }
