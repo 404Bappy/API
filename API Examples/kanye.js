@@ -1,7 +1,7 @@
 const loadQuotes = () => {
     fetch('https://api.kanye.rest')
-    .then(res => res.json())
-    .then(data => displayQuote(data));
+        .then(res => res.json())
+        .then(data => displayQuote(data));
 }
 
 const displayQuote = quote => {
