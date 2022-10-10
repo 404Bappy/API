@@ -3,7 +3,7 @@ const loadBuddies = () => {
         .then(res => res.json())
         .then(data => displayBuddies(data));
 }
-//call function
+//call function 
 loadBuddies();
 
 const displayBuddies = data => {
