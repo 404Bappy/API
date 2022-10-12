@@ -7,7 +7,11 @@ const loadCountries = () => {
 loadCountries();
 
 const displayCountries = countries => {
-    for(const country of countries ){
+   // for(const country of countries ){
+   //     console.log(country);
+    //}
+    const countriesDiv = document.getElementById('countries')
+    countries.forEach(country => {
         console.log(country);
-    }
+    })
 }
