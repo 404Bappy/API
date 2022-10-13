@@ -13,6 +13,7 @@ const displayCountries = countries => {
     const countriesDiv = document.getElementById('countries')
     countries.forEach(country => {
         const div = document.createElement('div');
+        div.classList.add('country')
         const h3 = document.createElement('h3');
         h3.innerText = country.name;
         div.appendChild(h3);
